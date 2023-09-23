@@ -1,0 +1,49 @@
+:root {
+  --bg-dark: #1f2937;
+  --primary: #f9faf8;
+  --secondary: #e5e7eb;
+  --btn-primay: #3882f6;
+  --info: #1f2937;
+  --section-bg: #e5e7eb;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../assets/fonts/Roboto.ttf');
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.hero__main-text {
+  font-size: 48px;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.hero__secondary-text {
+  font-size: 18px;
+  color: var(--secondary);
+}
+
+.logo-text {
+  font-size: 24px;
+  color: var(--primary);
+}
+
+.header__info-text {
+  font-size: 36px;
+  font-weight: 800;
+  color: var(--info);
+}
+
+.quote-bg {
+  background-color: var(--secondary);
+}
+
+.quote-text {
+  font-size: 36px ;
+}
