@@ -318,6 +318,95 @@ footer span {
   justify-content: center;
 }
 
+.product-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 16px;
+}
+
+.product-menu div {
+  border: 1px solid var(--bg-dark);
+  border-radius: 8px;
+  min-height: 300px;
+}
+
+.product-menu picture {
+  width: 400px;
+}
+
+.feature1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 10%;
+  background-color: var(--bg-dark);
+}
+
+.feature1 picture {
+  /* width: 400px; */
+  flex: 1;
+}
+
+.feature1 div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.feature1 div h1 {
+  text-align: right;
+  color: var(--primary);
+  font-size: 96px;
+  text-wrap: balance;  
+  margin-bottom: 16px;
+}
+.feature1 div p {
+  text-align: right;
+  color: var(--primary);
+  font-size: 24px;
+}
+
+.feature1 div a {
+  margin-top: 24px;
+  text-align: right;
+  color: var(--primary);
+  text-decoration: none;
+  border-radius: 12px;
+  border: 1px solid var(--primary);
+  max-width: 150px;
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-end;
+}
+
+.odd div a {
+  margin-top: 24px;
+  text-align: right;
+  color: var(--bg-dark);
+  text-decoration: none;
+  border-radius: 12px;
+  border: 1px solid var(--bg-dark);
+  max-width: 150px;
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+}
+
+.odd {
+  background-color: var(--primary);
+}
+
+.odd div h1, .odd div p {
+  color: var(--bg-dark);
+  text-align: left;
+}
+
+
 /* media query */
 
 @media only screen and (max-width: 1280px) {
