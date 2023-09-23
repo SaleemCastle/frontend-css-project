@@ -1,2 +1,2 @@
 ﻿# frontend-css-project
-project link - https://saleemcastle.github.io/frontend-css-project/index.html
+project link - https://saleemcastle.github.io/frontend-css-project/
