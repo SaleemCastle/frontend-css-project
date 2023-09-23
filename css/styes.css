@@ -8,14 +8,14 @@
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: url('../assets/fonts/Roboto.ttf');
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto.ttf");
 }
 
 * {
   padding: 0px;
   margin: 0px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 html {
@@ -133,7 +133,8 @@ picture img {
   flex: 1;
 }
 
-.main-hero article h1, .main-hero article p {
+.main-hero article h1,
+.main-hero article p {
   margin-bottom: 2rem;
 }
 
@@ -141,7 +142,7 @@ picture img {
   flex: 1;
 }
 
-.main-hero picture img{
+.main-hero picture img {
   object-fit: cover;
   width: 100%;
 }
@@ -232,7 +233,7 @@ picture img {
   height: 2px;
   background: var(--bg-dark);
   border: 0px;
-  border-radius: 2px
+  border-radius: 2px;
 }
 
 .cta-container {
@@ -273,7 +274,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap ;
+  flex-wrap: wrap;
 }
 
 .footer-logo {
@@ -285,18 +286,21 @@ footer {
   width: 100%;
 }
 
-.footer-links li, .footer-legal li{
+.footer-links li,
+.footer-legal li {
   color: var(--primary);
   list-style: none;
   padding: 4px 0;
 }
 
-.footer-links a, .footer-legal a {
+.footer-links a,
+.footer-legal a {
   color: inherit;
   text-decoration: none;
 }
 
-.footer-links h1, .footer-legal h1 {
+.footer-links h1,
+.footer-legal h1 {
   font-size: 20px;
   color: var(--primary);
   padding-bottom: 12px;
@@ -358,7 +362,7 @@ footer span {
   text-align: right;
   color: var(--primary);
   font-size: 96px;
-  text-wrap: balance;  
+  text-wrap: balance;
   margin-bottom: 16px;
 }
 .feature1 div p {
@@ -401,11 +405,11 @@ footer span {
   background-color: var(--primary);
 }
 
-.odd div h1, .odd div p {
+.odd div h1,
+.odd div p {
   color: var(--bg-dark);
   text-align: left;
 }
-
 
 /* media query */
 
@@ -483,7 +487,8 @@ footer span {
     max-width: 90px;
   }
 
-  .footer-links li, .footer-legal li {
+  .footer-links li,
+  .footer-legal li {
     color: var(--primary);
     list-style: none;
     padding: 4px 0;
@@ -539,7 +544,8 @@ footer span {
     font-size: 10px;
   }
 
-  .main-hero article h1, .main-hero article p {
+  .main-hero article h1,
+  .main-hero article p {
     margin-bottom: 2rem;
     text-align: center;
   }
@@ -598,11 +604,101 @@ footer span {
     justify-content: center;
     text-align: center;
     text-wrap: balance;
-  }  
+  }
 
   .quote-author {
     text-align: center;
     font-weight: 600;
     align-self: center;
   }
+}
+
+/* Contact From */
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.contact-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contact-description p {
+  text-align: center;
+  padding: 10px;
+  max-width: 100%;
+}
+
+.contact-description img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin-top: -50px;
+  margin-bottom: -100px;
+}
+
+.contact-form {
+  justify-content: space-between;
+  width: 100%;
+  max-width: 700px;
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-description {
+    margin-bottom: 0;
+  }
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.contact-form button {
+  background-color: #3882f6;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #1f2937;
 }
