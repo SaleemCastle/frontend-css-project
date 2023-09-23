@@ -210,11 +210,16 @@ html {
   border-radius: 2px
 }
 
+.services_image {
+  width:500px;
+}
+
 @media only screen and (max-width: 500px) {
   .products-container h1 {
     font-size: 20px;
     text-transform: uppercase;
   }
+  
   .navigation {
     display: flex;
     width: 100px;
@@ -223,4 +228,9 @@ html {
     justify-content: left;
     margin-left: 50px;
   }
+
+  .services_image {
+    width:250px;
+  }
 }
+
