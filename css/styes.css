@@ -18,8 +18,23 @@
   font-family: 'Roboto', sans-serif;
 }
 
-body {
-  
+html {
+  scroll-behavior: smooth;
+}
+
+.top {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+  color: var(--primary);
+  background-color: var(--btn-primay);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
 
 .hero__main-text {
@@ -47,10 +62,17 @@ body {
 
 .quote-bg {
   background-color: var(--secondary);
+  padding: 1rem 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .quote-text {
-  font-size: 36px ;
+  font-size: 36px;
+  max-width: 50%;
+  font-style: italic;
 }
 
 .hero-container {
@@ -118,8 +140,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: space-between; */
-  height: 1000px;
+  padding: 1rem 10%;
+  margin-bottom: 96px;
 }
 
 .products-container span {
@@ -139,6 +161,45 @@ body {
   text-wrap: balance;
   text-align: center;
   margin: 36px 0;
+}
+
+.products {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 16px;
+}
+
+.product-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex: 0.25;
+}
+
+.product-item img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.end {
+  align-self: flex-end;
+}
+
+.product-item h2 {
+  padding: 24px 0;
+}
+
+.product-item button {
+  width: 100%;
+  background-color: var(--btn-primay);
+  color: var(--primary);
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 14px 0;
 }
 
 .thin-line {
