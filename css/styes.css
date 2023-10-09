@@ -813,3 +813,7 @@ footer span {
     background: white;
     margin-top: -96px;
 }
+
+.about aside h1 {
+    font-size: 3rem;
+}
