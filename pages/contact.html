@@ -12,75 +12,88 @@
         &uarr;
     </a>
 
-    <section class="hero-container" id="top">
-        <header class="header-container">
-            <picture>
-              <a href="../index.html">
+    <header class="header-container" id="top">
+        <picture>
+            <a href="../index.html">
                 <img src="../assets/images/logo.png" alt="logo">
-              </a>
-            </picture>
+            </a>
+        </picture>
 
-            <nav class="navigation hero__secondary-text">
-                <a href="about.html">About us</a>
-                <a href="product.html">Products</a>
-                <a href="services.html">Services</a>
-                <a href="contact.html">Contact us</a>
-            </nav>
+        <nav class="navigation hero__secondary-text">
+            <a href="./about.html">About us</a>
+            <a href="./product.html">Products</a>
+            <a href="./services.html">Services</a>
+            <a href="./contact.html">Contact us</a>
+        </nav>
 
-            <div class="menu">
-              <img src="../assets/images/menu.svg" alt="">
-            </div>
-        </header>
-    </section>
+        <section class="menu">
+            <input type="checkbox" name="menu-toggle" id="menu-toggle">
+            <label for="menu-toggle" class="menu-button">&#9776;</label>
+            <aside class="sidebar" id="sidebar">
+                <button id="close-sidebar" class="close-button">×</button>
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./about.html">About us</a></li>
+                        <li><a href="./product.html">Products</a></li>
+                        <li><a href="./services.html">Services</a></li>
+                        <li><a href="./contact.html">Contact us</a></li>
+                    </ul>
+                </nav>
+            </aside>
+        </section>
+    </header>
 
-    <section class="products-container">
-        <span>
-            <hr class="thin-line">
-            <h1>Contact us</h1>
-            <hr class="thin-line">
-        </span>
-        <div class="row">
-            <div class="contact-description">
-                <img src="../assets/images/contact.png"  alt="customer support person"/>
-                
-                <div class="">
-                    <p>Feel free to contact us! Our friendly and responsive team will is here to help!</p>
+    <main class="main-hero">
+        <section class="products-container">
+            <span>
+                <hr class="thin-line">
+                <h1>Contact us</h1>
+                <hr class="thin-line">
+            </span>
+            <div class="row">
+                <div class="contact-description">
+                    <img src="../assets/images/contact.png"  alt="customer support person"/>
+                    
+                    <div class="">
+                        <p>Feel free to contact us! Our friendly and responsive team will is here to help!</p>
+                    </div>
                 </div>
+                <div class="contact-form">
+                    <form action="#" method="post">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                        
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                
             </div>
-            <div class="contact-form">
-                <form action="#" method="post">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                    
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-                    
-                    <button type="submit">Submit</button>
-                </form>
-            </div>
-            
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer>
-        <div class="footer-logo">
-            <img src="../assets//images/logo.png" alt="footer-logo">
-        </div>
-  
-        <div class="footer-links">
+        <picture class="footer-logo">
+            <img src="../assets/images/logo.png" alt="footer-logo">
+        </picture>
+
+        <nav class="footer-links">
             <h1>Links</h1>
             <ul>
-                <li><a href="../pages/about.html">About us</a></li>
-                <li><a href="../pages/product.html">Products</a></li>
-                <li><a href="../pages/services.html">Services</a></li>
-                <li><a href="../pages/contact.html">Contact us</a></li>
+                <li><a href="./about.html">About us</a></li>
+                <li><a href="./product.html">Products</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./contact.html">Contact us</a></li>
             </ul>
-        </div>
-  
-        <div class="footer-legal">
+        </nav>
+
+        <nav class="footer-legal">
             <h1>Legal</h1>
             <ul>
                 <li><a href="#">Privacy Policy</a></li>
@@ -88,9 +101,9 @@
                 <li><a href="#">Terms of Use</a></li>
                 <li><a href="#">Cookie Policy</a></li>
             </ul>
-        </div>
+        </nav>
         <hr>
-  
+
         <span>Copyright &copy;</span>
     </footer>
 </body>

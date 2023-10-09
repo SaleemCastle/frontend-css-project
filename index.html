@@ -11,102 +11,115 @@
     <a class="top" href="#top">
         &uarr;
     </a>
-    <section class="hero-container" id="top">
-        <header class="header-container">
-            <picture>
-                <img src="./assets/images/logo.png" alt="logo">
-            </picture>
+    <header class="header-container" id="top">
+        <picture>
+            <img src="./assets/images/logo.png" alt="logo">
+        </picture>
 
-            <nav class="navigation hero__secondary-text">
-                <a href="./pages/about.html">About us</a>
-                <a href="./pages/product.html">Products</a>
-                <a href="./pages/services.html">Services</a>
-                <a href="./pages/contact.html">Contact us</a>
-            </nav>
+        <nav class="navigation hero__secondary-text">
+            <a href="./pages/about.html">About us</a>
+            <a href="./pages/product.html">Products</a>
+            <a href="./pages/services.html">Services</a>
+            <a href="./pages/contact.html">Contact us</a>
+        </nav>
 
-            <div class="menu">
-                <img src="./assets/images/menu.svg" alt="">
-            </div>
-        </header>
+        <section class="menu">
+            <input type="checkbox" name="menu-toggle" id="menu-toggle">
+            <label for="menu-toggle" class="menu-button">&#9776;</label>
+            <aside class="sidebar" id="sidebar">
+                <button id="close-sidebar" class="close-button">×</button>
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./pages/about.html">About us</a></li>
+                        <li><a href="./pages/product.html">Products</a></li>
+                        <li><a href="./pages/services.html">Services</a></li>
+                        <li><a href="./pages/contact.html">Contact us</a></li>
+                    </ul>
+                </nav>
+            </aside>
+        </section>
+    </header>
 
-
-        <main class="main-hero">
-            <article>
+    <main class="main-hero">
+        <section class="hero">
+            <aside>
                 <h1 class="hero__main-text">Making those tough life choices a bit easier for you!</h1>
                 <p class="hero__secondary-text">
                     We design people inspired experiences that create positive change in people's lives. 
                     Changing the way we live and improve the way we get our task done, one step at a time.
                 </p>
                 <button class="btn">Sign Up</button>
-            </article>
+            </aside>
             <picture>
                 <img src="./assets/images/hero.png" alt="hero">
             </picture>
-        </main>
-    </section>
+        </section>
+    
 
-    <section class="products-container">
-        <span>
-            <hr class="thin-line">
-            <h1>Power up your creativity</h1>
-            <hr class="thin-line">
-        </span>
-        <p>
-            We have tons of unique features, meditation, healing experiences, unique travel oppurtunitues
-            that will help you create outstanding and unique experiences that will change your life 
-        </p>
+        <section class="products-container">
+            <span>
+                <hr class="thin-line">
+                <h1>Power up your creativity</h1>
+                <hr class="thin-line">
+            </span>
+            <p>
+                We have tons of unique features, meditation, healing experiences, unique travel oppurtunitues
+                that will help you create outstanding and unique experiences that will change your life 
+            </p>
 
-        <div class="products">
-            <div class="product-item">
-                <img src="./assets/images/hike.png" alt="A man walking in the forest">
-                <h2>Take a hike!</h2>
-                <button>Learn more</button>
+            <div class="products">
+                <figure class="product-item">
+                    <img src="./assets/images/hike.png" alt="A man walking in the forest">
+                    <figcaption>Take a hike!</figcaption>
+                    <button>Learn more</button>
+                </figure>
+
+                <figure class="product-item">
+                    <img src="./assets/images/meditate.png" alt="A person sitting meditating">
+                    <figcaption>Meditate and unwind.</figcaption>
+                    <button>Learn more</button>
+                </figure>
+
+                <figure class="product-item">
+                    <img src="./assets/images/swim.png" alt="A person floating around with a drink in their hand">
+                    <figcaption>Swim and relax.</figcaption>
+                    <button>Learn more</button>
+                </figure>
+
+                <figure class="product-item end">
+                    <img src="./assets/images/games.png" alt="A girl listening to music">
+                    <figcaption>Rock on &#128076;!</figcaption>
+                    <button>Learn more</button>
+                </figure>
             </div>
+        </section>
 
-            <div class="product-item">
-                <img src="./assets/images/meditate.png" alt="A person sitting meditating">
-                <h2>Meditate and unwind.</h2>
-                <button>Learn more</button>
-            </div>
-
-            <div class="product-item">
-                <img src="./assets/images/swim.png" alt="A person floating around with a drink in their hand">
-                <h2>Swim and relax.</h2>
-                <button>Learn more</button>
-            </div>
-
-            <div class="product-item end">
-                <img src="./assets/images/games.png" alt="A girl listening to music">
-                <h2>Rock on &#128076;!</h2>
-                <button>Learn more</button>
-            </div>
-        </div>
-    </section>
-
-    <section class="quote-bg">
+        <section class="quote-bg">
             <blockquote class="quote-text">
                 Nothing is impossible. The word itself says 'I'm possible!
             </blockquote>
             <cite class="quote-author">- Audrey Hepburn</cite>
-    </section>
+        </section>
 
-    <section class="cta-container">
-        <main class="cta">
-            <div>
-                <h3>Come on our journey and become the best you!</h3>
-                <p>Sign up and get access to our products and services</p>
-            </div>
-
-            <button class="btn cta-btn">Sign up</button>
-        </main>
-    </section>
+        <section class="cta-container">
+            <article class="cta">
+                <div>
+                    <h3>Come on our journey and become the best you!</h3>
+                    <p>Sign up and get access to our products and services</p>
+                </div>
+                
+                <button class="btn">Sign up</button>
+            </article>
+        </section>
+    </main>
 
     <footer>
-        <div class="footer-logo">
-            <img src="./assets//images/logo.png" alt="footer-logo">
-        </div>
+        <picture class="footer-logo">
+            <img src="./assets/images/logo.png" alt="footer-logo">
+        </picture>
 
-        <div class="footer-links">
+        <nav class="footer-links">
             <h1>Links</h1>
             <ul>
                 <li><a href="./pages/about.html">About us</a></li>
@@ -114,9 +127,9 @@
                 <li><a href="./pages/services.html">Services</a></li>
                 <li><a href="./pages/contact.html">Contact us</a></li>
             </ul>
-        </div>
+        </nav>
 
-        <div class="footer-legal">
+        <nav class="footer-legal">
             <h1>Legal</h1>
             <ul>
                 <li><a href="#">Privacy Policy</a></li>
@@ -124,7 +137,7 @@
                 <li><a href="#">Terms of Use</a></li>
                 <li><a href="#">Cookie Policy</a></li>
             </ul>
-        </div>
+        </nav>
         <hr>
 
         <span>Copyright &copy;</span>

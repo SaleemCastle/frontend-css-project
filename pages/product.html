@@ -1,168 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styes.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <title>Kintone - Product</title>
 </head>
+
 <body>
-  <a class="top" href="#top">
-    &uarr;
-  </a>
-    <section class="hero-container" id="top">
-        <header class="header-container">
-            <picture>
-              <a href="../index.html">
+    <a class="top" href="#top">
+        &uarr;
+    </a>
+
+    <header class="header-container" id="top">
+        <picture>
+            <a href="../index.html">
                 <img src="../assets/images/logo.png" alt="logo">
-              </a>
-            </picture>
+            </a>
+        </picture>
 
-            <nav class="navigation hero__secondary-text">
-                <a href="about.html">About us</a>
-                <a href="product.html">Products</a>
-                <a href="services.html">Services</a>
-                <a href="contact.html">Contact us</a>
-            </nav>
+        <nav class="navigation hero__secondary-text">
+            <a href="./about.html">About us</a>
+            <a href="./product.html">Products</a>
+            <a href="./services.html">Services</a>
+            <a href="./contact.html">Contact us</a>
+        </nav>
 
-            <div class="menu">
-              <img src="../assets/images/menu.svg" alt="">
-            </div>
-        </header>
+        <section class="menu">
+            <input type="checkbox" name="menu-toggle" id="menu-toggle">
+            <label for="menu-toggle" class="menu-button">&#9776;</label>
+            <aside class="sidebar" id="sidebar">
+                <button id="close-sidebar" class="close-button">×</button>
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./about.html">About us</a></li>
+                        <li><a href="./product.html">Products</a></li>
+                        <li><a href="./services.html">Services</a></li>
+                        <li><a href="./contact.html">Contact us</a></li>
+                    </ul>
+                </nav>
+            </aside>
+        </section>
+    </header>
 
-    </section>
+    <main class="main-hero">
+        <section class="products-container">
+            <span>
+                <hr class="thin-line">
+                <h1>Products</h1>
+                <hr class="thin-line">
+            </span>
+            <p>View our products aimed at creating a better you. Select from our menu below to view product details</p>
 
-    <section class="products-container">
-        <span>
-            <hr class="thin-line">
-            <h1>Products</h1>
-            <hr class="thin-line">
-        </span>
-        <p>View our products aimed at creating a better you. Select from our menu below to view product details</p>
+            <section class="product-menu" id="menu">
+                <figure>
+                    <picture>
+                        <a href="#games">
+                            <img src="../assets/images/games.png" alt="games">
+                        </a>
+                    </picture>
+                </figure>
 
-        <div class="product-menu" id="menu">
-          <div>
+                <figure>
+                    <picture>
+                        <a href="#hike">
+                            <img src="../assets/images/hike.png" alt="games">
+                        </a>
+                    </picture>
+                </figure>
+
+                <figure>
+                    <picture>
+                        <a href="#meditate">
+                            <img src="../assets/images/meditate.png" alt="games">
+                        </a>
+                    </picture>
+                </figure>
+
+                <figure>
+                    <picture>
+                        <a href="#swim">
+                            <img src="../assets/images/swim.png" alt="games">
+                        </a>
+                    </picture>
+                </figure>
+            </section>
+        </section>
+
+        <section class="feature" id="games">
             <picture>
-              <a href="#games">
-                <img src="../assets/images/games.png" alt="games">
-              </a>
+                <img src="../assets/images/games.png" alt="feature">
             </picture>
-          </div>
 
-          <div>
+            <aside>
+                <h1>Have fun and unwind</h1>
+                <p>
+                    Having fun is great for the body, and doing fun is what we do. Start relieving those stress levels
+                    by participating
+                    in a variety of fun activites.
+                </p>
+                <a href="#menu">Back to menu</a>
+            </aside>
+        </section>
+
+        <section class="feature odd" id="hike">
+            <aside>
+                <h1>Take a hike</h1>
+                <p>
+                    So, why hike? There are the obvious benefits of hiking like good exercise and getting outside.
+                    However, the reasons to pursue hiking go far beyond the physical benefits (of which there are many),
+                    and extend to finding a healthier and happier life through the outdoors.
+                </p>
+                <a href="#menu">Back to menu</a>
+            </aside>
             <picture>
-              <a href="#hike">
-                <img src="../assets/images/hike.png" alt="games">
-              </a>
+                <img src="../assets/images/hike.png" alt="feature2">
             </picture>
-          </div>
+        </section>
 
-          <div>
+        <section class="feature" id="meditate">
             <picture>
-              <a href="#meditate">
-                <img src="../assets/images/meditate.png" alt="games">
-              </a>
+                <img src="../assets/images/meditate.png" alt="feature3">
             </picture>
-          </div>
 
-          <div>
+            <aside>
+                <h1>Meditate and unwind</h1>
+                <p>
+                    Notice when your mind wanders, which will happen. Dont be hard on yourself when your mind goes
+                    elsewhere -
+                    just note where your mind drifted and then gently return your attention to your breath.
+                </p>
+                <a href="#menu">Back to menu</a>
+            </aside>
+        </section>
+
+        <section class="feature odd" id="swim">
+            <aside>
+                <h1>Swim and relax.</h1>
+                <p>
+                    You may have heard that experts recommend adults get 150 minutes of moderate activity or 75 minutes
+                    of vigorous activity each week.
+                    Swimming is an excellent way to work your entire body and cardiovascular system.
+                    An hour of swimming burns almost as many calories as running, without all the impact on your bones
+                    and joints.
+                </p>
+                <a href="#menu">Back to menu</a>
+            </aside>
             <picture>
-              <a href="#swim">
-                <img src="../assets/images/swim.png" alt="games">
-              </a>
+                <img src="../assets/images/swim.png" alt="feature2">
             </picture>
-          </div>
-        </div>
-    </section>
-
-    <section class="feature1" id="games">
-      <picture>
-        <img src="../assets/images/games.png" alt="feature1">
-      </picture>
-
-      <div>
-        <h1>Have fun and unwind</h1>
-        <p>
-          Having fun is great for the body, and doing fun is what we do. Start relieving those stress levels by participating
-           in a variety of fun activites.
-        </p>
-        <a href="#menu">Back to menu</a>
-      </div>
-    </section>
-
-    <section class="feature1 odd" id="hike">
-      <div>
-        <h1>Take a hike</h1>
-        <p>
-          So, why hike? There are the obvious benefits of hiking like good exercise and getting outside. 
-          However, the reasons to pursue hiking go far beyond the physical benefits (of which there are many), 
-          and extend to finding a healthier and happier life through the outdoors.
-        </p>
-        <a href="#menu">Back to menu</a>
-      </div>
-      <picture>
-        <img src="../assets/images/hike.png" alt="feature2">
-      </picture>
-    </section>
-
-    <section class="feature1" id="meditate">
-      <picture>
-        <img src="../assets/images/meditate.png" alt="feature3">
-      </picture>
-
-      <div>
-        <h1>Meditate and unwind</h1>
-        <p>
-          Notice when your mind wanders, which will happen. Dont be hard on yourself when your mind goes elsewhere -
-           just note where your mind drifted and then gently return your attention to your breath.
-        </p>
-        <a href="#menu">Back to menu</a>
-      </div>
-    </section>
-
-    <section class="feature1 odd" id="swim">
-      <div>
-        <h1>Swim and relax.</h1>
-        <p>
-          You may have heard that experts recommend adults get 150 minutes of moderate activity or 75 minutes of vigorous activity each week. 
-          Swimming is an excellent way to work your entire body and cardiovascular system. 
-          An hour of swimming burns almost as many calories as running, without all the impact on your bones and joints.
-        </p>
-        <a href="#menu">Back to menu</a>
-      </div>
-      <picture>
-        <img src="../assets/images/swim.png" alt="feature2">
-      </picture>
-    </section>
+        </section>
+    </main>
 
     <footer>
-      <div class="footer-logo">
-          <img src="../assets/images/logo.png" alt="footer-logo">
-      </div>
+        <picture class="footer-logo">
+            <img src="../assets//images/logo.png" alt="footer-logo">
+        </picture>
 
-      <div class="footer-links">
-          <h1>Links</h1>
-          <ul>
-              <li><a href="./about.html">About us</a></li>
-              <li><a href="./product.html">Products</a></li>
-              <li><a href="./services.html">Services</a></li>
-              <li><a href="./contact.html">Contact us</a></li>
-          </ul>
-      </div>
+        <nav class="footer-links">
+            <h1>Links</h1>
+            <ul>
+                <li><a href="./about.html">About us</a></li>
+                <li><a href="./product.html">Products</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./contact.html">Contact us</a></li>
+            </ul>
+        </nav>
 
-      <div class="footer-legal">
-          <h1>Legal</h1>
-          <ul>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms and Conditions</a></li>
-              <li><a href="#">Terms of Use</a></li>
-              <li><a href="#">Cookie Policy</a></li>
-          </ul>
-      </div>
-      <hr>
+        <nav class="footer-legal">
+            <h1>Legal</h1>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Cookie Policy</a></li>
+            </ul>
+        </nav>
+        <hr>
 
-      <span>Copyright &copy;</span>
-  </footer>
+        <span>Copyright &copy;</span>
+    </footer>
 </body>
+
 </html>
